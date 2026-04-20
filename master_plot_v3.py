@@ -23,12 +23,12 @@ import matplotlib.pyplot as plt
 BASE_DIR = '.'
 
 # V&D analytical solution (MATLAB output)
-VD_FILE = os.path.join(BASE_DIR, 'VD_Geometryanddelta.csv')
+VD_FILE = os.path.join(BASE_DIR, 'VD_Geometryanddelta.csv')  #Diplas and Vigilar file path and name
 
 # CFD case files — dict of {label: (filepath, color, linestyle, linewidth)}
 # Comment out or delete lines for cases you don't have yet
 CFD_CYCLIC = {
-    'Smooth 2m':                (os.path.join(BASE_DIR, 'wss_profile_2000_cyclic_smooth_2m.csv'),     '#2196F3', '-',  2.0),
+    'Smooth 2m':                (os.path.join(BASE_DIR, 'wss_profile_2000_cyclic_smooth_2m.csv'),     '#2196F3', '-',  2.0), #file path and name 
     'Rough 2m (OF12)':          (os.path.join(BASE_DIR, 'wss_profile_2000_cyclic_rough_2m.csv'),      '#F44336', '-',  2.5),
     'Rough 4m (OF12)':          (os.path.join(BASE_DIR, 'wss_profile_1500_cyclic_rough_4m.csv'),      '#9C27B0', '--', 2.0),
     'Rough 2m (v2312 atmNutk)': (os.path.join(BASE_DIR, 'wss_profile_2000_rough_2m_v2312.csv'),      '#FF9800', '-.', 2.5),
@@ -40,7 +40,7 @@ CFD_HPC_X45 = {
 }
 
 # HPC x-section directories (for flow development plots)
-HPC_SMOOTH_DIR = os.path.join(BASE_DIR, 'HPC 20 Smooth')
+HPC_SMOOTH_DIR = os.path.join(BASE_DIR, 'HPC 20 Smooth') #directories
 HPC_ROUGH_DIR  = os.path.join(BASE_DIR, 'HPC20Rough')
 
 OUTPUT_DIR = '.'
